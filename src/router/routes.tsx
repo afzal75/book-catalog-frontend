@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
 import Login from "../page/Login";
-// import NotFound from "../page/NotFound";
+import NotFound from "../page/NotFound";
 import Signup from "../page/Signup";
 import Home from "../page/Home";
 // import Books from "../page/Books";
@@ -80,10 +80,10 @@ const routes = createBrowserRouter([
         //   </PublicRoute>
         ),
       },
-    //   {
-    //     path: "*",
-    //     element: <NotFound />,
-    //   },
+      {
+        path: "*",
+        element: <NotFound />,
+      },
     ],
   },
 ]);
