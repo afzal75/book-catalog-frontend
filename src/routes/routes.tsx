@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
 // import Home from "../pages/Home";
-// import { AddNewBook } from "../pages/AddNewBook";
+import { AddNewBook } from "../pages/AddNewBook";
 import App from "../App";
 import Home from "../pages/Home";
 // import { AllBooks } from "../pages/AllBooks";
@@ -21,10 +21,10 @@ export const routes = createBrowserRouter([
         index: true,
         element: <Home />,
       },
-      // {
-      //   path: "/add-new-book",
-      //   element: <AddNewBook />,
-      // },
+      {
+        path: "/add-new-book",
+        element: <AddNewBook />,
+      },
       // {
       //   path: "/all-books",
       //   element: <AllBooks />,

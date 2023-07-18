@@ -3,6 +3,7 @@ export type FormValues = {
     author: string;
     genre: string;
     publicationDate: string;
+    image?: string
   };
   export type IBooks = {
     userEmail?: string | null;
@@ -11,6 +12,7 @@ export type FormValues = {
     author: string;
     genre: string;
     publicationDate: string;
+    image?: string,
     reviews: [];
   };
   export interface BookData {
@@ -20,6 +22,7 @@ export type FormValues = {
     author: string;
     genre: string;
     publicationDate: string;
+    image?: string,
     reviews?: string[];
   }
   export interface ReadData {
@@ -30,6 +33,7 @@ export type FormValues = {
     author: string;
     genre: string;
     publicationDate: string;
+    image?: string,
     reviews?: string[];
   }
   export interface LoginFormInputs {

@@ -117,6 +117,26 @@ export const AddNewBook = () => {
           <span className="text-red-500">{errors.publicationDate.message}</span>
         )}
       </div>
+      <div className="mb-4">
+        <label
+          htmlFor="image"
+          className="block mb-2 text-lg font-medium"
+        >
+          Book Image
+        </label>
+        <input
+          type="text"
+          id="image"
+          {...register("image", {
+          })}
+          className={`w-full px-4 py-2 border rounded-lg ${
+            errors.publicationDate ? "border-red-500" : "border-gray-300"
+          } text-gray-900`} // Set text color to gray-900
+        />
+        {errors.image && (
+          <span className="text-red-500">{errors.image.message}</span>
+        )}
+      </div>
 
       <div className="flex justify-center">
         <button
